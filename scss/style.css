@@ -1,0 +1,162 @@
+.dashboard {
+  position: relative;
+}
+.dashboard .gameOver {
+  visibility: hidden;
+  flex-direction: column;
+  z-index: 2;
+  position: absolute;
+  top: 306px;
+  background: rgb(255, 87, 87);
+  background: linear-gradient(90deg, rgba(255, 87, 87, 0.9864320728) 0%, rgb(255, 48, 48) 29%);
+  border-radius: 20%;
+  border: solid 5px gold;
+  padding: 10px;
+  box-shadow: 5px 5px 20px black;
+  transition: 1s;
+}
+.dashboard .gameOver img {
+  width: 50px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Audiowide", cursive;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 83%);
+  overflow: scroll;
+  height: 100vh;
+  flex-direction: column;
+}
+.dashboard .title {
+  min-width: 350px;
+  color: gold;
+  font-size: 65px;
+  text-shadow: 1px 1px 2px black;
+}
+.dashboard .title img {
+  width: 58px;
+  margin: 1px 1px 1px 3px;
+}
+.dashboard .cards {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+.dashboard .cards .card {
+  position: relative;
+  background: rgb(228, 228, 228);
+  border-radius: 10px;
+  margin: 5px;
+  padding-bottom: 4px;
+  flex-direction: column;
+  box-shadow: 3px 5px 16px rgba(0, 0, 0, 0.624), inset 2px 2px 10px rgb(255, 255, 255), inset -2px -2px 10px rgb(255, 255, 255);
+}
+.dashboard .cards .card .img-poke {
+  width: 150px;
+}
+.dashboard .cards .card .card-title {
+  color: gold;
+  font-size: 18px;
+  text-shadow: 1px 1px 1px black;
+}
+.dashboard .cards .card .card-reveal {
+  background: rgb(255, 87, 87);
+  background: linear-gradient(90deg, rgba(255, 87, 87, 0.9864320728) 0%, rgb(255, 48, 48) 29%);
+  color: gold;
+  border-radius: 10px;
+  border: solid 2px gold;
+  text-shadow: 2px 2px white;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 150px;
+}
+.dashboard .cards .card .card-reveal p {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.dashboard h2 {
+  margin: 5px 0px;
+  color: rgb(240, 240, 240);
+  text-shadow: 1px 1px 2px black;
+}
+.dashboard .btn-reload {
+  border-radius: 50%;
+}
+.dashboard .btn-reload img {
+  width: 45px;
+}
+
+.index-card {
+  z-index: -2;
+  opacity: 0%;
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.624), inset -10px -10px 10px rgba(0, 0, 0, 0.37);
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 768px) {
+  .dashboard .title {
+    margin-bottom: 20px;
+  }
+  .dashboard .cards .card .img-poke {
+    width: 120px;
+  }
+  .dashboard .cards .card .card-title {
+    font-size: 20px;
+  }
+  .dashboard .cards .card .card-reveal {
+    font-size: 120px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .dashboard .title {
+    font-size: 50px;
+  }
+  .dashboard .cards {
+    grid-template-columns: auto auto auto;
+  }
+  .dashboard .cards .card .img-poke {
+    width: 100px;
+  }
+  .dashboard .cards .card .card-title {
+    font-size: 12px;
+    color: black;
+    text-shadow: 2px 2px 20px black;
+  }
+  .dashboard .cards .card .card-reveal {
+    font-size: 100px;
+  }
+}
+@media screen and (max-width: 452px) {
+  .dashboard .title {
+    font-size: 30px;
+  }
+  .dashboard .title img {
+    width: 35px;
+  }
+  .dashboard .cards .card .img-poke {
+    width: 85px;
+  }
+  .dashboard .cards .card .card-title {
+    font-size: 10px;
+    color: black;
+    text-shadow: 2px 2px 20px black;
+  }
+  .dashboard .cards .card .card-reveal {
+    font-size: 80px;
+  }
+  .dashboard h2 {
+    font-size: 18px;
+  }
+}/*# sourceMappingURL=style.css.map */

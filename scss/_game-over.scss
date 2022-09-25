@@ -1,0 +1,20 @@
+.dashboard{
+    position: relative;
+    .gameOver{
+        visibility: hidden;
+        flex-direction: column;
+        z-index: 2;
+        position: absolute;
+        top: 306px;
+        background: rgb(255,87,87);
+        background: linear-gradient(90deg, rgba(255,87,87,0.9864320728291317) 0%, rgba(255,48,48,1) 29%);
+        border-radius: 20%;
+        border: solid 5px gold;
+        padding: 10px;
+        box-shadow: 5px 5px 20px black;
+        transition: 1s;
+        img{
+            width: 50px;
+        }
+    }
+}
